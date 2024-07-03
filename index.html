@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <h1>Welcome to my Webpage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+        <hr>
+        <span id="datetime"></span>
+    <p id="cont">My name is Peace... This is my very basic website.</p>
+    <p>SlackID: <span>@Peace_JAE</span></p>
+    <p>Slackemail: <span>elujidejoshua@gmail.com</span></p>
+        <img src="./images/Frame 11@02x.jpg" alt="my_face" id='myPic'>
+    <hr>
+    <main id="goal">
+    <h3>My Goals</h3>
+    <p>I recently enrolled in an internship called HNG. I intend to be a skilled and active frontend developer by 2026. I ought to be working as a junior developer, having real life experiences with code and working in a team of innovative minds with forward thinking.</p>
+    <p>I have been contemplating how not to sound greedy but i intend to using my frontend development skills to solve problems to make money. I would be lying if i said that making money did not cross my mind when i began this journey. I would say i matured to want to become even better.</p>
+    <p>
+        I would love the opportunity to be a certified frontend developer with the HNG 11 internship.
+    </p>
+    
+    </main>
+<ol id='links'>
+    <li><a href="http://hng.tech/learn" data-testid = "hngLink" target="_blank">HNG</a></li>
+    <li><a href="http://keyword.dog" data-testid ='keywordLink' target="_blank">KEYWORD</a></li>
+    <li><a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink" target="_blank">SCRAPE</a></li>
+</ol>
+<footer>
+    <h3>Copyright &copy; 2024</h3>
+</footer>
+    <script>
+        
+        function updateDateTime(){
+            const now = new Date()
+            const currentDateTime = now.toLocaleString()
+            
+            document.querySelector('#datetime').textContent = currentDateTime;
+        }
+        setInterval(updateDateTime, 1000)
+    </script>
+</body>
+</html>
